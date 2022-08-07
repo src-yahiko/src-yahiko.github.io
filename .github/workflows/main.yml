@@ -54,7 +54,7 @@ jobs:
           git remote set-url origin https://${github_token}@github.com/${repository}
           git commit -m "Workflow: Delpoy" -a
           git fetch origin main
-          git merge --strategy=ours origin/main
+          git merge --strategy=ours origin/main --allow-unrelated-histories
         env:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
