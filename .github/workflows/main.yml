@@ -55,6 +55,9 @@ jobs:
           git commit -m "Workflow: Delpoy" -a
           git fetch origin main
           git merge --strategy=ours origin/main --allow-unrelated-histories
+          git checkout main
+          git commit -m "Workflow: Deploy" -a
+          git push origin main
         env:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
