@@ -52,9 +52,10 @@ jobs:
           git config --global user.name $user_name
           git config --global user.email $user_email
           git remote set-url origin https://${github_token}@github.com/${repository}
-          git commit -m "Workflow: Delpoy" -a
           git fetch origin main
+          git branch
           git merge --strategy=ours origin/main --allow-unrelated-histories
+          git commit -m "Workflow: Delpoy" -a
           git checkout main
           git commit -m "Workflow: Deploy" -a
           git push origin main
