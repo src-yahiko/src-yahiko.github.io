@@ -52,17 +52,22 @@ jobs:
           git config --global user.name $user_name
           git config --global user.email $user_email
           git remote set-url origin https://${github_token}@github.com/${repository}
-          git add .
-          git commit -m "Workflow: Delpoy"
-          git commit -m "Add changes" -a
+          git commit -m "Workflow: Delpoy" -a
         env:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     ssh: true
+      #     branch: "main"
+
+      - name: Merge
+        uses: devmasx/merge-branch@master
         with:
-          ssh: true
-          branch: "main"
+          type: now
+          target_branch: main
+          github_token: ${{ github.token }}
