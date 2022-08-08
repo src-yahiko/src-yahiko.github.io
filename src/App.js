@@ -146,7 +146,7 @@ function DarkModeToggler({ className }) {
 
 function Navbar() {
 	return (
-		<nav className='z-20 fixed top-0 w-full border-b shadow-xl'>
+		<nav className='z-20 fixed top-0 w-full border-b shadow-lg'>
 			<div className='max-w-7xl w-full h-full items-center flex mx-auto px-2 justify-between'>
 				<div className='flex items-center'>
 					<h1 className='border-r px-1 mr-1 md:mr-5 md:px-5 md:border-l whitespace-nowrap'>
