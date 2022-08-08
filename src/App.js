@@ -152,16 +152,16 @@ function Navbar() {
 					<h1 className='border-r px-1 mr-1 md:mr-5 md:px-5 md:border-l whitespace-nowrap'>
 						src-yahiko
 					</h1>
-					<i className='h-12 p-3'>
+					<i className='h-10 md:h-12 p-2 md:p-3'>
 						<BsInstagram />
 					</i>
-					<i className='h-12 p-3'>
+					<i className='h-10 md:h-12 p-2 md:p-3'>
 						<BsGithub />
 					</i>
-					<i className='h-12 p-3'>
+					<i className='h-10 md:h-12 p-2 md:p-3'>
 						<BsLinkedin />
 					</i>
-					<i className='h-12 p-3'>
+					<i className='h-10 md:h-12 p-2 md:p-3'>
 						<BsGlobe2 />
 					</i>
 					{/* <UserIcon className='w-12 p-3' /> */}
