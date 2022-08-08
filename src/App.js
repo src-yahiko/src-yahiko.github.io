@@ -8,6 +8,8 @@ import {
 	HomeIcon,
 } from "@heroicons/react/solid";
 
+import { BsGithub, BsLinkedin, BsInstagram, BsGlobe2 } from "react-icons/bs";
+
 import { useEffect, useState } from "react";
 
 function animateScroll({ targetPosition, initialPosition, duration }) {
@@ -81,7 +83,7 @@ function scrollTo({ id, ref = null, duration = 800 }) {
 	const getElementPosition = (element) => element.offsetTop;
 
 	animateScroll({
-		targetPosition: getElementPosition(element),
+		targetPosition: getElementPosition(element) - 60,
 		initialPosition,
 		duration,
 	});
@@ -94,10 +96,6 @@ function ScrollToButton({ toId, toRef, duration, children }) {
 }
 
 function DarkModeToggler({ className }) {
-	const [scrollBtnUp, setScrollBtnUp] = useState(false);
-	const [scrollBtnUp2, setScrollBtnUp2] = useState(false);
-	const [scrollBtnUp3, setScrollBtnUp3] = useState(false);
-
 	const [darkmode, setDarkmode] = useState(
 		document.getElementsByTagName("html")[0].classList.contains("dark")
 	);
@@ -121,12 +119,6 @@ function DarkModeToggler({ className }) {
 	};
 
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			setScrollBtnUp(window.scrollY >= window.innerHeight * 0.3);
-			setScrollBtnUp2(window.scrollY >= window.innerHeight * 0.2);
-			setScrollBtnUp3(window.scrollY >= window.innerHeight * 0.1);
-		});
-
 		if (
 			(localStorage.theme === "dark" ||
 				(!localStorage.theme &&
@@ -139,37 +131,39 @@ function DarkModeToggler({ className }) {
 		}
 	}, [darkmode]);
 
-	return (
-		<div
-			className={
-				(scrollBtnUp3 && "scale-0 ") +
-				(scrollBtnUp2 && "fixed top-0 right-0 ") +
-				(scrollBtnUp && "scale-100")
-			}>
-			{darkmode ? (
-				<SunIcon
-					onClick={toggleDarkmode}
-					className='w-12 p-2 scale-0 dark:scale-100'
-				/>
-			) : (
-				<MoonIcon
-					onClick={toggleDarkmode}
-					className='w-12 p-2 scale-100 dark:scale-0'
-				/>
-			)}
-		</div>
+	return darkmode ? (
+		<SunIcon
+			onClick={toggleDarkmode}
+			className='w-12 p-2 scale-0 dark:scale-100'
+		/>
+	) : (
+		<MoonIcon
+			onClick={toggleDarkmode}
+			className='w-12 p-2 scale-100 dark:scale-0'
+		/>
 	);
 }
 
 function Navbar() {
 	return (
-		<nav className='z-20 absolute top-0 w-full border-b shadow-xl'>
+		<nav className='z-20 fixed top-0 w-full border-b shadow-xl'>
 			<div className='max-w-7xl w-full h-full items-center flex mx-auto px-2 justify-between'>
 				<div className='flex items-center'>
 					<h1 className='border-r px-2 mr-2 md:mr-5 md:px-5 md:border-l'>
 						src-yahiko
 					</h1>
-					{/* <HomeIcon className='h-12 p-3' /> */}
+					<i className='h-12 p-3'>
+						<BsInstagram />
+					</i>
+					<i className='h-12 p-3'>
+						<BsGithub />
+					</i>
+					<i className='h-12 p-3'>
+						<BsLinkedin />
+					</i>
+					<i className='h-12 p-3'>
+						<BsGlobe2 />
+					</i>
 					{/* <UserIcon className='w-12 p-3' /> */}
 					{/* <MailIcon className='w-12 p-3' /> */}
 				</div>
