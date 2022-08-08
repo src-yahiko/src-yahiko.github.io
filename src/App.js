@@ -28,7 +28,8 @@ function DarkModeToggler({ className }) {
 	useEffect(() => {
 		if (
 			(localStorage.theme === "dark" ||
-				window.matchMedia("(prefers-color-scheme: dark)").matches) &&
+				(!localStorage.theme &&
+					window.matchMedia("(prefers-color-scheme: dark)").matches)) &&
 			darkmode === false
 		) {
 			document.getElementsByTagName("body")[0].classList.add("dark");
@@ -86,7 +87,7 @@ function Sidebar() {
 }
 function Container({ children }) {
 	return (
-		<div className='md:ml-14 md:mr-4 px-2 pt-4'>
+		<div className='md:ml-14 md:mr-4 px-2 pt-4 pb-24'>
 			<div className='flex flex-col space-y-20'>{children}</div>
 		</div>
 	);
