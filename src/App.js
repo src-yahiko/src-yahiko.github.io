@@ -28,8 +28,7 @@ function DarkModeToggler({ className }) {
 	useEffect(() => {
 		if (
 			(localStorage.theme === "dark" ||
-				(!("theme" in localStorage) &&
-					window.matchMedia("(prefers-color-scheme: dark)").matches)) &&
+				window.matchMedia("(prefers-color-scheme: dark)").matches) &&
 			darkmode === false
 		) {
 			document.getElementsByTagName("body")[0].classList.add("dark");
