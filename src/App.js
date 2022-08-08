@@ -1,4 +1,4 @@
-import { SunIcon, MoonIcon, HomeIcon } from "@heroicons/react/solid";
+import { SunIcon, MoonIcon, HomeIcon, ChatIcon } from "@heroicons/react/solid";
 
 import { useEffect, useState } from "react";
 
@@ -78,17 +78,65 @@ function Sidebar() {
 	return (
 		<aside className='z-10 fixed bottom-0 w-screen md:left-0 md:h-screen border-t md:border-r md:w-auto shadow-xl'>
 			<div className='w-full h-full items-center flex md:flex-col justify-center'>
-				<SunIcon className='w-14 p-3 scale-0' />
-				{/* <SunIcon className='w-12 p-2' /> */}
+				<ChatIcon className='w-14 p-3 hover:cursor-not-allowed' />
+				{/* <SunIcon className='w-14 p-3 scale-0' /> */}
 			</div>
 		</aside>
 	);
 }
 function Container({ children }) {
 	return (
-		<div className='max-w-4xl p-0 mt-12 mx-auto md:pl-12 pb-24'>
-			<div className='flex flex-col space-y-40'>{children}</div>
+		<div className='md:ml-14 md:mr-4 px-2 pt-4'>
+			<div className='flex flex-col space-y-20'>{children}</div>
 		</div>
+	);
+}
+
+function WIP() {
+	return (
+		<div className='animate-pulse'>
+			<h1 className='border-b text-4xl w-fit pb-2 mb-5'>WIP</h1>
+			<div className='opacity-30 flex flex-col space-y-5'>
+				<div className='flex space-x-5'>
+					<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+					<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+				</div>
+				<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+
+				<div className='flex space-x-5'>
+					<div className='flex flex-1 flex-col space-y-5'>
+						<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+						<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+					</div>
+					<div className='flex-1 w-full h-69 border bg-neutral-500 rounded-xl shadow-sm'></div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+function ShowcaseCard() {
+	return (
+		<article className='space-y-3 opacity-30'>
+			<div className='block w-96'></div>
+			<div className='flex items-center'>
+				<div className='bg-neutral-500 h-16 w-16 rounded-md shadow'></div>
+				<p className='flex-1 text-center'>Lorem ipsum dolor sit</p>
+			</div>
+
+			<div className='bg-neutral-500 h-52'></div>
+
+			<p className='text-sm text-justify text-neutral-500 '>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+				eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+				voluptua.
+			</p>
+
+			<div className='flex space-x-1'>
+				<button className='flex-1'>Visit</button>
+				<button className='flex-1'>GitHub</button>
+			</div>
+		</article>
 	);
 }
 
@@ -98,27 +146,19 @@ function App() {
 			<Navbar></Navbar>
 			<Sidebar></Sidebar>
 			<Container>
-				<div className='p-4 animate-pulse'>
-					<h1 className='border-b text-center pb-2 mb-2 uppercase tracking-wider text-4xl'>
-						Work in progress
-					</h1>
-					<div className='opacity-30'>
-						<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm my-5'></div>
-						<div className='flex space-x-5'>
-							<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
-							<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
-						</div>
-						<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm my-5'></div>
-
-						<div className='flex space-x-5'>
-							<div className='flex flex-1 flex-col space-y-5'>
-								<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
-								<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
-							</div>
-							<div className='flex-1 w-full h-69 border bg-neutral-500 rounded-xl shadow-sm'></div>
-						</div>
+				<section>
+					<WIP />
+				</section>
+				<section>
+					<h1 className='border-b text-4xl w-fit pb-2 mb-2'>Portfolio</h1>
+					<div className='pb-4 flex scrollbar-round scrollbar-thin scrollbar-thumb-neutral-500 space-x-10 animate-pulse'>
+						<ShowcaseCard />
+						<ShowcaseCard />
+						<ShowcaseCard />
+						<ShowcaseCard />
+						<ShowcaseCard />
 					</div>
-				</div>
+				</section>
 			</Container>
 		</div>
 	);

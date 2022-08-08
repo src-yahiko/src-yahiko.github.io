@@ -20,7 +20,7 @@ html * {
   border-color: rgb(100,100,100);
 }
 
-#root, html {
+#root, html, body {
   @apply bg-secondary dark:bg-primary text-primary dark:text-secondary;
 }
 
@@ -29,10 +29,10 @@ html * {
 }
 
 button {
-  @apply shadow-sm hover:shadow border py-2 px-5;
+  @apply shadow-sm hover:shadow text-lg border py-2 px-5 ;
 }
 
-nav svg, aside svg {
+nav svg, aside svg, button {
   @apply hover:cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-900
 }
 
@@ -43,3 +43,4 @@ nav h1 {
 nav, aside {
   @apply bg-secondary dark:bg-primary
 }
+
