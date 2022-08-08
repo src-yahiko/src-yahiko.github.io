@@ -57,13 +57,13 @@ function DarkModeToggler({ className }) {
 
 function Navbar() {
 	return (
-		<nav className='z-20 fixed top-0 w-screen border-b shadow-xl'>
+		<nav className='z-20 absolute top-0 w-screen border-b shadow-xl'>
 			<div className='max-w-7xl w-full h-full items-center flex mx-auto px-2 justify-between'>
 				<div className='flex items-center'>
 					<h1 className='border-r px-2 mr-2 md:mr-5 md:px-5 md:border-l'>
 						src-yahiko
 					</h1>
-					<HomeIcon className='h-12 p-3' />
+					{/* <HomeIcon className='h-12 p-3' /> */}
 					{/* <UserIcon className='w-12 p-3' /> */}
 					{/* <MailIcon className='w-12 p-3' /> */}
 				</div>
@@ -85,6 +85,7 @@ function Sidebar() {
 		</aside>
 	);
 }
+
 function Container({ children }) {
 	return (
 		<div className='md:ml-14 md:mr-4 px-2 pt-4 pb-24'>
@@ -99,17 +100,17 @@ function WIP() {
 			<h1 className='border-b text-4xl w-fit pb-2 mb-5'>WIP</h1>
 			<div className='opacity-30 flex flex-col space-y-5'>
 				<div className='flex space-x-5'>
-					<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
-					<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+					<div className='w-full h-32 border theme-bg-secondary rounded-xl shadow-sm'></div>
+					<div className='w-full h-32 border theme-bg-secondary rounded-xl shadow-sm'></div>
 				</div>
-				<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+				<div className='w-full h-32 border theme-bg-secondary rounded-xl shadow-sm'></div>
 
 				<div className='flex space-x-5'>
 					<div className='flex flex-1 flex-col space-y-5'>
-						<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
-						<div className='w-full h-32 border bg-neutral-500 rounded-xl shadow-sm'></div>
+						<div className='w-full h-32 border theme-bg-secondary rounded-xl shadow-sm'></div>
+						<div className='w-full h-32 border theme-bg-secondary rounded-xl shadow-sm'></div>
 					</div>
-					<div className='flex-1 w-full h-69 border bg-neutral-500 rounded-xl shadow-sm'></div>
+					<div className='flex-1 w-full h-69 border theme-bg-secondary rounded-xl shadow-sm'></div>
 				</div>
 			</div>
 		</div>
@@ -119,21 +120,21 @@ function WIP() {
 function ShowcaseCard() {
 	return (
 		<article className='space-y-3 opacity-30'>
-			<div className='block w-96'></div>
+			<div className='w-80'></div>
 			<div className='flex items-center'>
-				<div className='bg-neutral-500 h-16 w-16 rounded-md shadow'></div>
+				<div className='theme-bg-secondary h-16 w-16 rounded-md shadow'></div>
 				<p className='flex-1 text-center'>Lorem ipsum dolor sit</p>
 			</div>
 
-			<div className='bg-neutral-500 h-52'></div>
+			<div className='theme-bg-secondary h-52'></div>
 
-			<p className='text-sm text-justify text-neutral-500 '>
+			<p className='text-sm text-justify theme-fc-secondary '>
 				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 				eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 				voluptua.
 			</p>
 
-			<div className='flex space-x-1'>
+			<div className='flex space-x-1 mx-auto'>
 				<button className='flex-1'>Visit</button>
 				<button className='flex-1'>GitHub</button>
 			</div>
@@ -152,7 +153,7 @@ function App() {
 				</section>
 				<section>
 					<h1 className='border-b text-4xl w-fit pb-2 mb-2'>Portfolio</h1>
-					<div className='pb-4 flex scrollbar-round scrollbar-thin scrollbar-thumb-neutral-500 space-x-10 animate-pulse'>
+					<div className='pb-4 flex scrollbar-round scrollbar-thin scrollbar-thutheme-bg-secondary space-x-10 animate-pulse'>
 						<ShowcaseCard />
 						<ShowcaseCard />
 						<ShowcaseCard />
