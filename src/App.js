@@ -134,12 +134,12 @@ function DarkModeToggler({ className }) {
 	return darkmode ? (
 		<SunIcon
 			onClick={toggleDarkmode}
-			className='w-12 p-2 scale-0 dark:scale-100'
+			className='h-10 md:h-12 p-2 md:p-3 scale-0 dark:scale-100'
 		/>
 	) : (
 		<MoonIcon
 			onClick={toggleDarkmode}
-			className='w-12 p-2 scale-100 dark:scale-0'
+			className='h-10 md:h-12 p-2 md:p-3 scale-100 dark:scale-0'
 		/>
 	);
 }
