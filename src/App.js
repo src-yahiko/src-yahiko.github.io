@@ -1,6 +1,6 @@
 import { SunIcon, MoonIcon, HomeIcon } from "@heroicons/react/solid";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function DarkModeToggler({ className }) {
 	const [darkmode, setDarkmode] = useState(
@@ -10,6 +10,12 @@ function DarkModeToggler({ className }) {
 	const toggleDarkmode = () => {
 		document.getElementsByTagName("body")[0].classList.toggle("dark");
 
+		if (document.getElementsByTagName("body")[0].classList.contains("dark")) {
+			localStorage.theme = "dark";
+		} else {
+			localStorage.theme = "light";
+		}
+
 		setTimeout(
 			() =>
 				setDarkmode(
@@ -18,6 +24,19 @@ function DarkModeToggler({ className }) {
 			100
 		);
 	};
+
+	useEffect(() => {
+		if (
+			(localStorage.theme === "dark" ||
+				(!("theme" in localStorage) &&
+					window.matchMedia("(prefers-color-scheme: dark)").matches)) &&
+			darkmode === false
+		) {
+			document.getElementsByTagName("body")[0].classList.add("dark");
+			setDarkmode(true);
+			// toggleDarkmode();
+		}
+	}, [darkmode]);
 
 	return (
 		<>

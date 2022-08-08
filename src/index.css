@@ -20,8 +20,11 @@ html * {
   border-color: rgb(100,100,100);
 }
 
-#root {
+#root, html {
   @apply bg-secondary dark:bg-primary text-primary dark:text-secondary;
+}
+
+#root {
   min-height: 100vh;
 }
 
