@@ -152,16 +152,16 @@ function Navbar() {
 					<h1 className='md:border-r px-1 mr-1 md:mr-5 md:px-5 whitespace-nowrap'>
 						src-yahiko
 					</h1>
-					<i className='h-10 md:h-12 p-2 md:p-3'>
+					<i className='h-10 pt-3 md:h-12 p-2 md:p-3'>
 						<BsInstagram />
 					</i>
-					<i className='h-10 md:h-12 p-2 md:p-3'>
+					<i className='h-10 pt-3 md:h-12 p-2 md:p-3'>
 						<BsGithub />
 					</i>
-					<i className='h-10 md:h-12 p-2 md:p-3'>
+					<i className='h-10 pt-3 md:h-12 p-2 md:p-3'>
 						<BsLinkedin />
 					</i>
-					<i className='h-10 md:h-12 p-2 md:p-3'>
+					<i className='h-10 pt-3 md:h-12 p-2 md:p-3'>
 						<BsGlobe2 />
 					</i>
 					{/* <UserIcon className='w-12 p-3' /> */}
@@ -239,7 +239,7 @@ function WIP({ title }) {
 
 function ShowcaseCard() {
 	return (
-		<article className='space-y-3'>
+		<article className='space-y-3' style={{ scrollSnapAlign: "start" }}>
 			<div className='w-80'></div>
 			<div className='flex items-center'>
 				<div className='theme-bg-secondary h-16 w-16 rounded-md shadow'></div>
@@ -264,7 +264,9 @@ function ShowcaseCard() {
 
 function SideScroll({ children }) {
 	return (
-		<div className='pb-4 flex scrollbar-thin scrollbar-thumb-stone-500 space-x-10'>
+		<div
+			className='pb-4 flex scrollbar-thin scrollbar-thumb-stone-500 space-x-10'
+			style={{ scrollSnapType: "x mandatory" }}>
 			{children}
 		</div>
 	);
