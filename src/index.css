@@ -39,6 +39,13 @@ code {
   @apply border-neutral-300 dark:border-neutral-700
 }
 
+.link {
+  @apply underline hover:cursor-pointer 
+}
+
+.link:hover {
+  @apply theme-fc-primary
+}
 html *, body * {
   @apply transition-all theme-b-primary;
 }
