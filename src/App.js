@@ -499,6 +499,35 @@ function App() {
           <h1 className="border-b text-4xl w-fit pb-2 mb-2">Portfolio</h1>
           <SideScroll>
             <ShowcaseCard
+              logo="/img/tictactoe.png"
+              img="/img/tictactoe.png"
+              title="React TicTacToe"
+              content="Seit Juni 2019 unterstütze ich die SAP Beratungsfirma in der internen IT. Arbeitsumgebung ist hier Windows, die M365 Cloud und Azure."
+            >
+              <button
+                className="flex-1"
+                onClick={() =>
+                  window.open(
+                    "https://src-yahiko.github.io/react-tictactoe/",
+                    ""
+                  )
+                }
+              >
+                Öffnen
+              </button>
+              <button
+                className="flex-1"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/src-yahiko/react-tictactoe/tree/main",
+                    ""
+                  )
+                }
+              >
+                GitHub
+              </button>
+            </ShowcaseCard>
+            <ShowcaseCard
               logo="/img/pcs.png"
               img="/img/pcs2.png"
               title="Wordpress Salon Website"
