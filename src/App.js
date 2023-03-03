@@ -381,7 +381,7 @@ function App() {
 				<section className="h-screen">
 					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
 						<div className="">
-							<p className="animate-bounce text-5xl">
+							<p className="animate-bounce text-5xl font-mono">
 								<span className="text-orange-500">#!ch</span>
 								<span className="theme-fc-primary">/bin/omar</span>
 							</p>
