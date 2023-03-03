@@ -381,7 +381,7 @@ function App() {
       <Container>
         <section className="h-screen">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-            <div className="animate-bounce">
+            <div className="">
               <p className="text-5xl">
                 <span className="text-orange-500">#!ch</span>
                 <span className="theme-fc-primary">/bin/omar</span>
@@ -399,7 +399,7 @@ function App() {
 
         <section id="skills">
           <h1 className="border-b text-4xl w-fit pb-2 mb-5">
-            Bildungsweg & Berufspraxis
+            Slider
           </h1>
           <div className="flex flex-col space-y-5">
           {/* Ich interessiere mich für ein dynamisches Arbeitsumfeld, für die Arbeit in kleineren Teams und für wirkungsvolle Projekte und neuen Technologien. Dementsprechend bin ich auch jemand, der gerne Neues lernt und die Zusammenarbeit mit erfahreneren Kollegen besonders schätzt. Darüber hinaus möchte ich meine akademischen Fähigkeiten weiter ausbauen und plane daher, nach meinem Bachelor-Abschluss einen geeigneten Master-Studiengang in Berlin zu absolvieren. Meine Motivation dafür ist, dass ich erkannt habe, welche Art von Arbeit zu mir passt und wie unverzichtbar Kreativität, Innovation und Entwicklung für mich für meine berufliche Zukunft sind. */}
@@ -419,19 +419,6 @@ function App() {
           </div>
 
           <SideScroll>
-            {/* <ShowcaseCard
-              logo="/img/tuhh.png"
-              img="/img/tuhh2.jpg"
-              title="Computer Science B.Sc @ TUHH"
-              content="April 2019 entschloss ich mich von meinem ehemaligen Studiengang Informatik-Ingenieurwesen auf Computer Science zu wechseln."
-            >
-              <button
-                className="flex-1"
-                onClick={() => window.open("https://tuhh.de", "_blank")}
-              >
-                In neuem Tab öffnen
-              </button>
-            </ShowcaseCard> */}
             <ShowcaseCard
               logo="/img/bitratelogo.png"
               img="/img/bitratelogo.png"
@@ -447,63 +434,10 @@ function App() {
               </button>
             </ShowcaseCard>
             <ShowcaseCard
-              logo="/img/pcs.png"
-              img="/img/pcs2.png"
-              title="Werkstudent IT"
-              content="Ich unterstützte die SAP BI Beratungsfirma in folgenden IT Themen:
-              • Interner Support (SharePoint, Exchange, SAP Clients, VPNs), Benutzer- und Systemadministration im M365 Umfeld (PowerShell Scripting für Erstellung, Änderung, Löschung und Prüfung von Objekten, Information und Strukturen, versch. Projekte (u.a. mit MySQL, SharePoint, Backups), Administration von Azure Cloud Infrastruktur (Terraform, VPN, WVD, Server) und Intune (Policies, Softwareverteilung, etc.)"
-            >
-              <button
-                className="flex-1"
-                onClick={() =>
-                  window.open("https://beratungscontor.de", "_blank")
-                }
-              >
-                In neuem Tab öffnen
-              </button>
-            </ShowcaseCard>
-            {/* <ShowcaseCard
-              logo="/img/bs.png"
-              img="/img/bs.jfif"
-              title="Werkstudent Softwareentwicklung"
-              content="Mein erstes kundenorientierte Projekt in der Webentwicklung habe ich während meines Praktikums 2018 bei barusystems GmbH abschließen können. Dort programmierte ich eine minimalistische web-basierte Kassenanwendung in PHP."
-            >
-              <button
-                className="flex-1"
-                onClick={() => window.open("https://barusystems.de", "_blank")}
-              >
-                In neuem Tab öffnen
-              </button>
-            </ShowcaseCard> */}
-            {/* <ShowcaseCard
-              logo="/img/Lessing.jpg"
-              img="/img/lessing2.jpg"
-              title="Abitur 2016"
-              content="2016 Abitur am Lessing-Gymnasium Berlin-Mitte mit den Schwerpunkten Physik und Kunst."
-            >
-              <button
-                className="flex-1"
-                onClick={() =>
-                  window.open(
-                    "https://lessing-gymnasium-berlin.de/.de",
-                    "_blank"
-                  )
-                }
-              >
-                In neuem Tab öffnen
-              </button>
-            </ShowcaseCard> */}
-          </SideScroll>
-        </section>
-
-        <section id="projects">
-          <h1 className="border-b text-4xl w-fit pb-2 mb-2">Portfolio</h1>
-          <SideScroll>
-            <ShowcaseCard
               logo="/img/tictactoe.png"
               img="/img/tictactoe.png"
-              title="React TicTacToe"
-              content="Seit Juni 2019 unterstütze ich die SAP Beratungsfirma in der internen IT. Arbeitsumgebung ist hier Windows, die M365 Cloud und Azure."
+              title="Tic Tac Toe"
+              content="React Tic Tac Toe. Viel Spaß beim ausprobieren"
             >
               <button
                 className="flex-1"
@@ -528,6 +462,13 @@ function App() {
                 GitHub
               </button>
             </ShowcaseCard>
+          </SideScroll>
+        </section>
+
+        {/* <section id="projects">
+          <h1 className="border-b text-4xl w-fit pb-2 mb-2">Portfolio</h1>
+          <SideScroll>
+            
             <ShowcaseCard
               logo=""
               img=""
@@ -559,7 +500,7 @@ function App() {
               </button>
             </ShowcaseCard>
           </SideScroll>
-        </section>
+        </section> */}
 
         <section id="contact">
           <WIP title="Kontakt" />
