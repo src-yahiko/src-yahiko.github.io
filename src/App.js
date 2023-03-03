@@ -387,7 +387,7 @@ function App() {
                 <span className="theme-fc-primary">/bin/omar</span>
               </p>
               <p className="text-sm uppercase text-sky-600">
-                Information [{myTime}]: <u>Willkommen</u> auf meine Seite.
+                Information [{myTime}]: <u>Willkommen</u>
               </p>
             </div>
           </div>
@@ -399,11 +399,10 @@ function App() {
 
         <section id="skills">
           <h1 className="border-b text-4xl w-fit pb-2 mb-5">
-            Arbeit und Bildung
+            Bildungsweg & Berufspraxis
           </h1>
           <div className="flex flex-col space-y-5">
-            - Studium... , Arbeit Entwicklung , Arbeit Administration ,
-            Automatisierung
+          Ich interessiere mich für ein dynamisches Arbeitsumfeld, für die Arbeit in kleineren Teams und für wirkungsvolle Projekte und neuen Technologien. Dementsprechend bin ich auch jemand, der gerne Neues lernt und die Zusammenarbeit mit erfahreneren Kollegen besonders schätzt. Darüber hinaus möchte ich meine akademischen Fähigkeiten weiter ausbauen und plane daher, nach meinem Bachelor-Abschluss einen geeigneten Master-Studiengang in Berlin zu absolvieren. Meine Motivation dafür ist, dass ich erkannt habe, welche Art von Arbeit zu mir passt und wie unverzichtbar Kreativität, Innovation und Entwicklung für mich für meine berufliche Zukunft sind.
             {/* <div className="flex space-x-5">
               <div className="w-full h-32 theme-bg-secondary rounded-xl shadow-sm"></div>
               <div className="w-full h-32 theme-bg-secondary rounded-xl shadow-sm"></div>
