@@ -374,7 +374,7 @@ function App() {
 	);
 
 	return (
-		<div id="home" className="text-xl md:text-2xl pt-12">
+		<div id="home" className="text-xl md:text-2xl pt-12 ov">
 			<Navbar></Navbar>
 			<Sidebar></Sidebar>
 			<Container>
