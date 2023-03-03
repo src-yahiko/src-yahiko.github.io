@@ -4,18 +4,18 @@
 cd "$(dirname "$0")"
 
 # go to dev branch
-git checkout dev
+git checkout main 
 
 # create temporary stage branch from dev and build
 git checkout -b stage
 npm run build
 
 # delete dev files
-rm -rf package-lock.json package.json public src
+# rm -rf package-lock.json package.json public src
 
 # move build files to root directory
-find build -maxdepth 1 -mindepth 1 -exec mv {} . \;
-rmdir build
+find build -maxdepth 1 -mindepth 1 -exec cp -r * {} . \;
+rm -rf build
 
 # merge with main
 git merge --strategy=ours main -m "stage to main"
@@ -31,6 +31,6 @@ git push
 
 # delete stage branch and go back to dev
 git branch -D stage
-git checkout dev
+# git checkout dev
 
 
