@@ -1,6 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c342871.css",
+<<<<<<< HEAD
     "main.js": "/static/js/main.be812642.js",
     "index.html": "/index.html",
     "main.0c342871.css.map": "/static/css/main.0c342871.css.map",
@@ -9,5 +10,15 @@
   "entrypoints": [
     "static/css/main.0c342871.css",
     "static/js/main.be812642.js"
+=======
+    "main.js": "/static/js/main.c7237120.js",
+    "index.html": "/index.html",
+    "main.0c342871.css.map": "/static/css/main.0c342871.css.map",
+    "main.c7237120.js.map": "/static/js/main.c7237120.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c342871.css",
+    "static/js/main.c7237120.js"
+>>>>>>> stage
   ]
 }
