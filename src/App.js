@@ -220,7 +220,7 @@ function Sidebar() {
 
 function Container({ children }) {
 	return (
-		<div className="md:ml-14 md:mr-4 px-2 pt-4 pb-24">
+		<div className="md:ml-14 md:mr-4 px-2 pt-4 pb-24 max-w-full">
 			<div className="flex flex-col space-y-20 md:container md:max-w-4xl mx-auto">
 				{children}
 			</div>
@@ -337,13 +337,13 @@ function ShowcaseCard({ logo, title, img, content = "", children }) {
 			<p className="text-sm text-justify theme-fc-secondary ">
 				{content && content.length > 100 ? (
 					<>
-						{content.substr(0, 100) + "..."}
+						{content.substr(0, 85) + "..."}
 						<span onClick={() => setOpen(!open)} className="flex link">
 							Mehr anzeigen
 						</span>
 					</>
 				) : (
-					content
+					<>{content}<br></br><br></br></>
 				)}
 			</p>
 			<div className="w-full flex space-x-1 mx-auto">{children}</div>
@@ -425,7 +425,7 @@ function App() {
 							<br></br>
 							Aufgrund meiner natürlichen Begeisterung und meines Engagements bin ich zuversichtlich, dass ich nicht nur qualitativ hochwertige Arbeitsergebnisse erzielen, sondern auch einen wertvollen Beitrag zu einem positiven Arbeitsumfeld leisten kann. Ich habe nicht nur die Fähigkeit und den Wunsch, sondern auch den nötigen Ehrgeiz, um in Zukunft in einem für mich passenden Fachgebiet wirklich gut zu werden. Ich möchte nicht nur Arbeit machen, und mir ein Gehalt verdienen - sondern brauche immer die Möglichkeit, tiefer zu gehen. Ich bin auf der Suche nach Herausforderungen und neuen Erfahrungen, die mehr aus mir herausholen und meine derzeitigen Fähigkeiten abrunden. </p>
 						<div className="mx-auto align-baseline m-10 p-10">
-							<div className="absolute -translate-x-1/2 translate-y-[260%]">
+							<div className="absolute -translate-x-1/4 translate-y-[290%]">
 								<img className=" overflow-hidden bg-black p-5 rounded-full" width="140vw" src="/img/br.png" />
 							</div>
 							<img className="rounded-lg shadow-inner overflow-hidden" width="240vw" src="/img/Foto3.jpg" />
@@ -441,7 +441,7 @@ function App() {
 					<h1 className="border-b text-4xl w-fit pb-2 mb-5">
 						Projekte
 					</h1>
-					<code className="bg-black text-gray-300 p-3 rounded-lg text-sm">// WIP: Die Website befindet sich im Aufbau
+					<code className="bg-black text-gray-300 p-3 rounded-lg text-xs">// WIP: Die Website befindet sich im Aufbau
 						<br>
 						</br></code>
 					<div className="flex flex-col space-y-5">
@@ -462,6 +462,24 @@ function App() {
 					</div>
 
 					<SideScroll>
+						<ShowcaseCard
+							logo="/img/nextjs.png"
+							img="/img/pos.png"
+							title="Kassensystem"
+							content="Mockup einer minimalistischen POS Anwendung für Salons programmiert mit NextJS. Anwendung mit MySQL Server bei +10 Kunden im Einsatz."
+						>
+							<button
+								className="flex-1"
+								onClick={() =>
+									window.open(
+										"https://pos-blond.vercel.app/",
+										""
+									)
+								}
+							>
+								Öffnen
+							</button>
+						</ShowcaseCard>
 						<ShowcaseCard
 							logo="/img/react.png"
 							img="/img/tic.png"
@@ -511,7 +529,7 @@ function App() {
 							logo="/img/bitrate_klein.png"
 							img="/img/bitrate.png"
 							title="Title"
-							content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+							content="Diese Karte exisitert um den Slide Effekt, ohne den Aufwand vom Einpflegen echter Informationen, hervorzuheben"
 						></ShowcaseCard>
 						<ShowcaseCard
 							logo="/img/bitrate_klein.png"
