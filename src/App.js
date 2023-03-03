@@ -402,7 +402,7 @@ function App() {
             Bildungsweg & Berufspraxis
           </h1>
           <div className="flex flex-col space-y-5">
-          Ich interessiere mich für ein dynamisches Arbeitsumfeld, für die Arbeit in kleineren Teams und für wirkungsvolle Projekte und neuen Technologien. Dementsprechend bin ich auch jemand, der gerne Neues lernt und die Zusammenarbeit mit erfahreneren Kollegen besonders schätzt. Darüber hinaus möchte ich meine akademischen Fähigkeiten weiter ausbauen und plane daher, nach meinem Bachelor-Abschluss einen geeigneten Master-Studiengang in Berlin zu absolvieren. Meine Motivation dafür ist, dass ich erkannt habe, welche Art von Arbeit zu mir passt und wie unverzichtbar Kreativität, Innovation und Entwicklung für mich für meine berufliche Zukunft sind.
+          {/* Ich interessiere mich für ein dynamisches Arbeitsumfeld, für die Arbeit in kleineren Teams und für wirkungsvolle Projekte und neuen Technologien. Dementsprechend bin ich auch jemand, der gerne Neues lernt und die Zusammenarbeit mit erfahreneren Kollegen besonders schätzt. Darüber hinaus möchte ich meine akademischen Fähigkeiten weiter ausbauen und plane daher, nach meinem Bachelor-Abschluss einen geeigneten Master-Studiengang in Berlin zu absolvieren. Meine Motivation dafür ist, dass ich erkannt habe, welche Art von Arbeit zu mir passt und wie unverzichtbar Kreativität, Innovation und Entwicklung für mich für meine berufliche Zukunft sind. */}
             {/* <div className="flex space-x-5">
               <div className="w-full h-32 theme-bg-secondary rounded-xl shadow-sm"></div>
               <div className="w-full h-32 theme-bg-secondary rounded-xl shadow-sm"></div>
@@ -419,11 +419,11 @@ function App() {
           </div>
 
           <SideScroll>
-            <ShowcaseCard
+            {/* <ShowcaseCard
               logo="/img/tuhh.png"
               img="/img/tuhh2.jpg"
-              title="Computer Science "
-              content="Seit 2020 studiere ich den Bachelor Studiengang Computer Science an der TU Hamburg."
+              title="Computer Science B.Sc @ TUHH"
+              content="April 2019 entschloss ich mich von meinem ehemaligen Studiengang Informatik-Ingenieurwesen auf Computer Science zu wechseln."
             >
               <button
                 className="flex-1"
@@ -431,12 +431,13 @@ function App() {
               >
                 In neuem Tab öffnen
               </button>
-            </ShowcaseCard>
+            </ShowcaseCard> */}
             <ShowcaseCard
               logo="/img/bitratelogo.png"
               img="/img/bitratelogo.png"
               title="Selbstständigkeit"
-              content="Nebenbei bearbeite ich Anfragen aus dem Umfeld als Selbsständiger. Zu meinen Aufträgen gehört das Erstellen und Gosten von Webseiten, das Behandeln von Datenbank Fehlern und scripting für automatische Synchronisierungen von Datenbanken und Backups."
+              content="Bearbeitung von Anfragen aus dem persönlichen Netzwerk mit folgenden Inhalten:
+              Automatisierung von Routine-Aufgaben (Bash, MySQL Server, FTP Backup), Diverse Berichterstellung z. B. für Umsätze etc. (SQL, Excel), Implementierung von Exportfunktionen (PHP, Excel), IT-Beratung, Betreuung und Problemlösung, Erweiterung und Fehlerbehebung in versch. Webanwendungen (NextJS, Strapi CMS)"
             >
               <button
                 className="flex-1"
@@ -448,8 +449,9 @@ function App() {
             <ShowcaseCard
               logo="/img/pcs.png"
               img="/img/pcs2.png"
-              title="IT Werkstudent"
-              content="Seit Juni 2019 unterstütze ich die SAP Beratungsfirma in der internen IT. Arbeitsumgebung ist hier Windows, die M365 Cloud und Azure."
+              title="Werkstudent IT"
+              content="Ich unterstützte die SAP BI Beratungsfirma in folgenden IT Themen:
+              • Interner Support (SharePoint, Exchange, SAP Clients, VPNs), Benutzer- und Systemadministration im M365 Umfeld (PowerShell Scripting für Erstellung, Änderung, Löschung und Prüfung von Objekten, Information und Strukturen, versch. Projekte (u.a. mit MySQL, SharePoint, Backups), Administration von Azure Cloud Infrastruktur (Terraform, VPN, WVD, Server) und Intune (Policies, Softwareverteilung, etc.)"
             >
               <button
                 className="flex-1"
@@ -460,10 +462,10 @@ function App() {
                 In neuem Tab öffnen
               </button>
             </ShowcaseCard>
-            <ShowcaseCard
+            {/* <ShowcaseCard
               logo="/img/bs.png"
               img="/img/bs.jfif"
-              title="Praktikum"
+              title="Werkstudent Softwareentwicklung"
               content="Mein erstes kundenorientierte Projekt in der Webentwicklung habe ich während meines Praktikums 2018 bei barusystems GmbH abschließen können. Dort programmierte ich eine minimalistische web-basierte Kassenanwendung in PHP."
             >
               <button
@@ -472,8 +474,8 @@ function App() {
               >
                 In neuem Tab öffnen
               </button>
-            </ShowcaseCard>
-            <ShowcaseCard
+            </ShowcaseCard> */}
+            {/* <ShowcaseCard
               logo="/img/Lessing.jpg"
               img="/img/lessing2.jpg"
               title="Abitur 2016"
@@ -490,7 +492,7 @@ function App() {
               >
                 In neuem Tab öffnen
               </button>
-            </ShowcaseCard>
+            </ShowcaseCard> */}
           </SideScroll>
         </section>
 
@@ -527,8 +529,8 @@ function App() {
               </button>
             </ShowcaseCard>
             <ShowcaseCard
-              logo="/img/pcs.png"
-              img="/img/pcs2.png"
+              logo=""
+              img=""
               title="Wordpress Salon Website"
               content="Seit Juni 2019 unterstütze ich die SAP Beratungsfirma in der internen IT. Arbeitsumgebung ist hier Windows, die M365 Cloud und Azure."
             >
@@ -542,25 +544,10 @@ function App() {
               </button>
             </ShowcaseCard>
             <ShowcaseCard
-              logo="/img/pcs.png"
-              img="/img/pcs2.png"
+              logo=""
+              img=""
               title="NextJS Landingpage"
-              content="Seit Juni 2019 unterstütze ich die SAP Beratungsfirma in der internen IT. Arbeitsumgebung ist hier Windows, die M365 Cloud und Azure."
-            >
-              <button
-                className="flex-1"
-                onClick={() =>
-                  window.open("https://beratungscontor.de", "_blank")
-                }
-              >
-                In neuem Tab öffnen
-              </button>
-            </ShowcaseCard>
-            <ShowcaseCard
-              logo="/img/pcs.png"
-              img="/img/pcs2.png"
-              title="NextJS Landingpage"
-              content="Seit Juni 2019 unterstütze ich die SAP Beratungsfirma in der internen IT. Arbeitsumgebung ist hier Windows, die M365 Cloud und Azure."
+              content=""
             >
               <button
                 className="flex-1"
