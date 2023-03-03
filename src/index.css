@@ -10,7 +10,6 @@ body {
   overflow-x:hidden;
   font-size:small;
 }
-
 .ov {
   overflow-y:hidden;
 }
@@ -86,3 +85,5 @@ nav,
 aside {
   @apply theme-bg-primary
 }
+
+

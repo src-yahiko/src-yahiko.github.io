@@ -153,16 +153,16 @@ function Navbar() {
 					<h1 className="md:border-r px-1 mr-1 md:mr-5 md:px-5 whitespace-nowrap font-mono">
 						src-yahiko
 					</h1>
-					<i className="h-10 pt-3 md:h-12 p-2 md:p-3">
+					<i className="h-10 pt-3 md:h-12 p-2 md:p-3" onClick={() => window.open("https://www.instagram.com/omrbtr_/", "")}>
 						<BsInstagram />
 					</i>
-					<i className="h-10 pt-3 md:h-12 p-2 md:p-3">
+					<i className="h-10 pt-3 md:h-12 p-2 md:p-3" onClick={() => window.open("https://github.com/src-yahiko", "")}>
 						<BsGithub />
 					</i>
-					<i className="h-10 pt-3 md:h-12 p-2 md:p-3">
+					<i className="h-10 pt-3 md:h-12 p-2 md:p-3" onClick={() => window.open("https://www.linkedin.com/in/omar-bittar", "")}>
 						<BsLinkedin />
 					</i>
-					<i className="h-10 pt-3 md:h-12 p-2 md:p-3">
+					<i className="h-10 pt-3 md:h-12 p-2 md:p-3" onClick={() => window.open("https://bitrate-it.de", "")}>
 						<BsGlobe2 />
 					</i>
 					{/* <UserIcon className='w-12 p-3' /> */}
@@ -426,7 +426,7 @@ function App() {
 							Aufgrund meiner natürlichen Begeisterung und meines Engagements bin ich zuversichtlich, dass ich nicht nur qualitativ hochwertige Arbeitsergebnisse erzielen, sondern auch einen wertvollen Beitrag zu einem positiven Arbeitsumfeld leisten kann. Ich habe nicht nur die Fähigkeit und den Wunsch, sondern auch den nötigen Ehrgeiz, um in Zukunft in einem für mich passenden Fachgebiet wirklich gut zu werden. Ich möchte nicht nur Arbeit machen, und mir ein Gehalt verdienen - sondern brauche immer die Möglichkeit, tiefer zu gehen. Ich bin auf der Suche nach Herausforderungen und neuen Erfahrungen, die mehr aus mir herausholen und meine derzeitigen Fähigkeiten abrunden. </p>
 						<div className="mx-auto align-baseline m-10 p-10">
 							<div className="absolute -translate-x-1/4 translate-y-[290%]">
-								<img className=" overflow-hidden bg-black p-5 rounded-full" width="140vw" src="/img/br.png" />
+								<img className="overflow-hidden bg-black p-5 rounded-full animate-bounce" width="140vw" src="/img/br.png" />
 							</div>
 							<img className="rounded-lg shadow-inner overflow-hidden" width="240vw" src="/img/Foto3.jpg" />
 						</div>
@@ -623,6 +623,7 @@ function App() {
 				<section id="contact">
 					<WIP title="Kontakt" />
 				</section>
+				<code className="text-center text-xs text-neutral-500 p-3 rounded-full animate-pulse">/* Thank you for visiting */</code>
 			</Container>
 		</div >
 	);
