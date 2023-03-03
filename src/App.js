@@ -406,9 +406,9 @@ function App() {
 						</p>
 						<div className="mx-auto align-baseline m-10 p-10">
 							<div className="absolute translate-x-1/2 translate-y-1/2">
-								<img className="rounded-2xl  overflow-hidden" width="250px" src="/img/Foto.png" />
+								<img className="rounded-2xl  overflow-hidden" width="230vw" src="/img/Foto.png" />
 							</div>
-							<img className="rounded-2xl shadow-inner overflow-hidden" width="250px" src="/img/Foto2.png" />
+							<img className="rounded-2xl shadow-inner overflow-hidden" width="240vw" src="/img/Foto2.png" />
 						</div>
 					</div>
 				</section>
@@ -426,9 +426,9 @@ function App() {
 							Aufgrund meiner natürlichen Begeisterung und meines Engagements bin ich zuversichtlich, dass ich nicht nur qualitativ hochwertige Arbeitsergebnisse erzielen, sondern auch einen wertvollen Beitrag zu einem positiven Arbeitsumfeld leisten kann. Ich habe nicht nur die Fähigkeit und den Wunsch, sondern auch den nötigen Ehrgeiz, um in Zukunft in einem für mich passenden Fachgebiet wirklich gut zu werden. Ich möchte nicht nur Arbeit machen, und mir ein Gehalt verdienen - sondern brauche immer die Möglichkeit, tiefer zu gehen. Ich bin auf der Suche nach Herausforderungen und neuen Erfahrungen, die mehr aus mir herausholen und meine derzeitigen Fähigkeiten abrunden. </p>
 						<div className="mx-auto align-baseline m-10 p-10">
 							<div className="absolute -translate-x-1/2 translate-y-[260%]">
-								<img className=" overflow-hidden bg-black p-5 rounded-full" width="200px" src="/img/br.png" />
+								<img className=" overflow-hidden bg-black p-5 rounded-full" width="140vw" src="/img/br.png" />
 							</div>
-							<img className="rounded-lg shadow-inner overflow-hidden" width="250px" src="/img/Foto3.jpg" />
+							<img className="rounded-lg shadow-inner overflow-hidden" width="240vw" src="/img/Foto3.jpg" />
 						</div>
 					</div>
 				</section>
