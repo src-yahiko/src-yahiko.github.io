@@ -190,7 +190,7 @@ function Sidebar() {
 	}, []);
 
 	return (
-		<div className="z-10 fixed bottom-0 md:left-0 w-full md:w-auto md:h-screen mb-5 px-5 md:mb-0 md:px-0">
+		<div className="z-20 fixed bottom-0 md:left-0 w-full md:w-auto md:h-screen mb-5 px-5 md:mb-0 md:px-0">
 			<aside className="md:border-0 md:h-full md:border-r shadow-2xl border theme-b-secondary">
 				<div className="w-full h-full items-center flex md:flex-col justify-center">
 					<ScrollToButton toId="home">
