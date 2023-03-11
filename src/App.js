@@ -425,10 +425,7 @@ function App() {
 							<br></br>
 							Aufgrund meiner natürlichen Begeisterung und meines Engagements bin ich zuversichtlich, dass ich nicht nur qualitativ hochwertige Arbeitsergebnisse erzielen, sondern auch einen wertvollen Beitrag zu einem positiven Arbeitsumfeld leisten kann. Ich habe nicht nur die Fähigkeit und den Wunsch, sondern auch den nötigen Ehrgeiz, um in Zukunft in einem für mich passenden Fachgebiet wirklich gut zu werden. Ich möchte nicht nur Arbeit machen, und mir ein Gehalt verdienen - sondern brauche immer die Möglichkeit, tiefer zu gehen. Ich bin auf der Suche nach Herausforderungen und neuen Erfahrungen, die mehr aus mir herausholen und meine derzeitigen Fähigkeiten abrunden. </p>
 						<div className="mx-auto align-baseline m-10 p-10">
-							<div className="absolute -translate-x-1/4 translate-y-[290%]">
-								<img className="overflow-hidden bg-black p-5 rounded-full animate-bounce" width="140vw" src="/img/br.png" />
-							</div>
-							<img className="rounded-lg shadow-inner overflow-hidden" width="240vw" src="/img/Foto3.jpg" />
+							<img className="rounded-lg shadow-inner overflow-hidden bg-black p-4 animate-bounce mt-20" width="240vw" src="/img/br.png" />
 						</div>
 					</div>
 				</section>
@@ -502,6 +499,35 @@ function App() {
 								onClick={() =>
 									window.open(
 										"https://github.com/src-yahiko/react-tictactoe/tree/main",
+										""
+									)
+								}
+							>
+								GitHub
+							</button>
+						</ShowcaseCard>
+						<ShowcaseCard
+							logo="/img/react.png"
+							img="/img/wordc.png"
+							title="React Word Counter"
+							content="Minimalistischer Wörter Zähler programmiert mit React JS."
+						>
+							<button
+								className="flex-1"
+								onClick={() =>
+									window.open(
+										"https://src-yahiko.github.io/react-wordcounter/",
+										""
+									)
+								}
+							>
+								Öffnen
+							</button>
+							<button
+								className="flex-1"
+								onClick={() =>
+									window.open(
+										"https://github.com/src-yahiko/react-wordcounter/tree/main",
 										""
 									)
 								}
